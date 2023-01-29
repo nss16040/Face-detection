@@ -20,7 +20,7 @@ while True:
     # display image
     cv2.imshow('photo:', frame)
 
-    # wait for code to execute
+    # wait command
     key = cv2.waitKey(1)
     # we can quit by pressing Q or q
     if key == 113 or key == 81:
