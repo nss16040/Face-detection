@@ -1,11 +1,7 @@
 import cv2  # imported lib
 
 # loaded predtrained dataset
-trained_data = cv2.CascadeClassifier(
-    'haarcascade_frontalface_default.xml')
-
-# imported the image->img = cv2.imread('/Users/nishantsharma/Desktop/codes/vgp.jpg')
-
+trained_data = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 # use live video
 img = cv2.VideoCapture(0)
 
@@ -26,7 +22,7 @@ while True:
 
     # wait for code to execute
     key = cv2.waitKey(1)
-    # we can quit by pressing Q
+    # we can quit by pressing Q or q
     if key == 113 or key == 81:
         break
 img.release()
